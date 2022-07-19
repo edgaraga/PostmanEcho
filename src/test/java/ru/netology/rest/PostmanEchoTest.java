@@ -19,7 +19,7 @@ public class PostmanEchoTest {
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
-                .body("data", equalTo("some value"))
+                .body("data", equalTo("some data"))
         ;
     }
 
@@ -33,7 +33,7 @@ public class PostmanEchoTest {
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
-                .body("data", equalTo("currency:RUB"));
+                .body("data", equalTo("currency:USD"));
     }
 
     @Test
@@ -46,6 +46,6 @@ public class PostmanEchoTest {
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
-                .body("data", equalTo("id:3"));
+                .body("data", equalTo("id:2"));
     }
 }
