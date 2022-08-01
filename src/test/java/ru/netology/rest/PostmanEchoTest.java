@@ -35,7 +35,7 @@ public class PostmanEchoTest {
                 .contentType(ContentType.JSON)
                 .body("data", equalTo("currency:USD"));
     }
-/*
+
     @Test
     void shouldReturnId() {
         given()
@@ -48,5 +48,4 @@ public class PostmanEchoTest {
                 .contentType(ContentType.JSON)
                 .body("data", equalTo("id:2"));
     }
- */
 }
